@@ -38,7 +38,7 @@ The project compares both methods in terms of training loss, convergence behavio
 | Setting | Value |
 |----------|--------|
 | Model | `distilbert-base-uncased` |
-| Dataset | IMDB (25k train / 25k test) |
+| Dataset | IMDB (10k train / 5k test) |
 | Task | Binary sentiment classification |
 | Batch Size | 32 |
 | Learning Rate | 2e-5 for full fine-tuning, 2e-4 for LoRA |
@@ -50,18 +50,16 @@ The project compares both methods in terms of training loss, convergence behavio
 
 ## 📊 Results Overview
 
-| Model | Final Training Loss | Accuracy | F1-score | Observations |
-|--------|----------------------|-----------|-----------|---------------|
-| Full Fine-Tuning | ~0.15 | ≈ 93 % | ≈ 0.92 | Smooth convergence, slightly lower final loss |
-| LoRA | ~0.12 – 0.17 (stable) | ≈ 92 % | ≈ 0.91 | Similar performance, higher efficiency |
-
+| Model | Final Training Loss | Accuracy | F1-score |
+|--------|----------------------|-----------|-----------|
+| Full Fine-Tuning | ~0.20 | ≈ 90.16 % | ≈ 0.9016 | 
+| LoRA | does not converge | ≈ 90.04 % | ≈ 0.9004 | 
 ---
 
 ## 🧱 Reproducibility
 
 To reproduce training:
 
-```bash
-# run main.py
+run all the cells in main.ipynb
 
 
