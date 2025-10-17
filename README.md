@@ -1,4 +1,4 @@
- 🤖 Sentiment Classification on IMDB using Transformer Fine-Tuning
+## 🤖 Sentiment Classification on IMDB using Transformer Fine-Tuning
 
 This repository contains a Natural Language Processing (NLP) project that fine-tunes pretrained Transformer models to classify movie reviews from the IMDB dataset as **positive** or **negative**.  
 Two fine-tuning strategies are implemented:
